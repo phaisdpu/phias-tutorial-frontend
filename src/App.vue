@@ -7,11 +7,11 @@
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <!-- router link to /tutorials -->
-          <router-link to="/tutorials" class="nav-link">Tutorials</router-link>
+          <router-link to="/tutorials" class="nav-link">ทดสอบ</router-link>
         </li>
         <li class="nav-item">
           <!-- router link to /add -->
-          <router-link to="/add" class="nav-link">Add</router-link>
+          <router-link to="/add" class="nav-link">เพิ่ม</router-link>
         </li>
       </div>
     </nav>
