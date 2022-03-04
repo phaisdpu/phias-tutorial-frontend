@@ -11,7 +11,7 @@ on:
       - develop
 
 env:
-  APP_NAME: phais-tutorial-frontend
+  APP_NAME: phias-tutorial-frontend
   CONTAINER_REPOSITORY: "acrphaistutorial001.azurecr.io"
   IMAGE_TAG: "0.0.1-SNAPSHOT"
 
