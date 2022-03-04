@@ -1,0 +1,44 @@
+name: DEV - Build
+
+on:
+  workflow_dispatch:
+  
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+env:
+  APP_NAME: phais-tutorial-frontend
+  CONTAINER_REPOSITORY: "acrphaistutorial001.azurecr.io"
+  IMAGE_TAG: "0.0.1-SNAPSHOT"
+
+jobs:
+  unitest:
+      name: UnitTest
+      runs-on: ubuntu-latest
+      environment: dev
+      steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # - name: Setup node
+      #   uses: actions/setup-node@v2
+      #   with:
+      #     node-version: '14'
+
+      # - name: Install dependencies
+      #   run: npm install
+
+      # - name: Unit test
+      #   run: npm run test:unit
+
+      # - name: Upload Reports
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: Unit Test Results
+      #     path: '${{ github.workspace }}/coverage/lcov-report/*'
+
+      
